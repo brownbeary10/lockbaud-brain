@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef } from "react";
 
 // ─── CONFIG — fill in your keys here ─────────────────────────────────────────
-const SUPABASE_URL = "https://YOUR_PROJECT.supabase.co";
-const SUPABASE_ANON_KEY = "YOUR_SUPABASE_PUBLISHABLE_KEY";
-const ANTHROPIC_API_KEY = "YOUR_ANTHROPIC_API_KEY";
+const SUPABASE_URL = "https://vaehqmfsdtvnhueznruq.supabase.co";
+const SUPABASE_ANON_KEY = "sb_publishable_hGlw5QA617YxFYB-j6biBg_9aLS1dnz";
+const ANTHROPIC_API_KEY = "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";
 // ─── SUPABASE HELPERS ─────────────────────────────────────────────────────────
 async function dbFetch(path, opts = {}) {
   const res = await fetch(`${SUPABASE_URL}/rest/v1/${path}`, {
